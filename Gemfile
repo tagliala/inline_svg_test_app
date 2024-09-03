@@ -21,3 +21,5 @@ gem 'jbuilder'
 gem 'inline_svg'
 
 gem 'pry'
+
+gem 'puma'
