@@ -1,8 +1,7 @@
 # Examples of all the configurable bits of inline_svg
-#
-# These are found in app/lib:
-require "my_custom_transform"
-require "default_transform"
+
+require_relative '../../lib/default_transform'
+require_relative '../../lib/my_custom_transform'
 
 class AssetFile
   # Should return a String representing the SVG document requested by filename
@@ -34,6 +33,8 @@ InlineSvg.configure do |config|
   #  ],
   #  filters: /\.svg/
   #)
+
+  #config.asset_finder = InlineSvg::WebpackAssetFinder
 
   # Examples of using custom transformations
   config.add_custom_transformation(attribute: :custom, transform: MyCustomTransform)

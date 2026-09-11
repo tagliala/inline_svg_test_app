@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '7.0.8.4'
+gem 'rails', '8.1.3.1'
 
 # Use edge Sprockets-rails for testing
 #gem 'sprockets-rails', github: 'rails/sprockets-rails'
